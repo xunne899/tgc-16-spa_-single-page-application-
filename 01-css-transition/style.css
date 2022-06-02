@@ -1,0 +1,25 @@
+.box{
+    width: 60px;
+    height: 60px;
+    background-color:green;
+    /* notify the browser that the box's width, height and background-color will be animated */
+    will-change: width, height, background-color;
+}
+
+/* this css rule only happens when the mouse
+cursor is over anything with a class box */
+.box:hover{
+    transition: width 2s, height 2s;
+    width: 100px;
+    height: 100px;
+    color: red;
+}
+
+.stretch{
+    /* tell the browser what css properties will be animated */
+    /* animate width over two second */
+    transition: width 2s linear, height 2s, background-color 4s; 
+    width: 100px; /* over 2s, expand the width to 100px */
+    height: 100px; /* over 2s, expand the height to 100px */
+    background-color: red;
+}
